@@ -4,7 +4,7 @@ var path = require('path')
 var routers = require('./routers/index')
 var morgan = require('morgan')
 var app =  express()
-var port = 3000
+var port = process.env.PORT || 3000
 var db = require('./config/db/index')
 var numeral = require('numeral')
 
@@ -20,6 +20,6 @@ app.set('views', path.join(__dirname, 'resources','views'));
 
 routers(app) 
 
-app.listen(process.env.PORT || port, () => {
+app.listen(port, () => {
     console.log(`App listening at http://localhost:${port}`)
   })
