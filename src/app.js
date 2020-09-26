@@ -4,7 +4,7 @@ var path = require('path')
 var routers = require('./routers/index')
 var morgan = require('morgan')
 var app =  express()
-var port = 8888
+var port = 3000
 var db = require('./config/db/index')
 var numeral = require('numeral')
 
