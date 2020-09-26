@@ -1,0 +1,70 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-xl-8">
+            <div class="row">
+             
+                <div class="col-xl-12">
+                    <div class="detail-main-image-wrap">
+                        <img src="/img/{{docs.image}}" alt="" class="detail-main-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4">
+            <div class="product-title">
+                <h2>{{docs.name}}</h2>
+                <span class="code-product">
+                    Mã : <span>{{docs._id}}</span>
+                </span>
+                <span class="status-product">
+                    Trạng thái : <b>Còn hàng</b>
+                </span>
+                <span class="rate-product">
+                    Xếp hạng : 
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                </span>
+            </div>
+            <div class="product-price">
+                <span class="detail-price-current">{{docs.pricecurrent}} ₫</span>
+                <del>{{docs.priceold}} ₫</del>
+                </br>
+                </br>
+                <span class="product-sale">Giảm 19%</span>
+                <span class="product-vat">(Đã bao gồm VAT)</span>
+            </div>
+            <div class="product-select">
+                <div class="product-select-color">
+
+                    <span>Màu sắc :</span>
+                    <span class="color-text">Trắng</span>
+                    <div class="product-color-list product-color-list-detail">
+                       
+                        <div class="product-color-item"></div>
+                        <div class="product-color-item"></div>
+                        <div class="product-color-item"></div>
+                        <div class="product-color-item"></div>
+                       
+                    </div>
+                </div>
+                <div class="product-select-size">
+                    <span>Kích thước</span> 
+                    <a href="/" class="guild-size">(Hướng dẫn tính size giày)</a>
+                    <ul class="list-size">
+                        <li class="size">35</li>
+                        <li class="size">36</li>
+                        <li class="size">37</li>
+                        <li class="size">38</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="select-button">
+                <button  class="detail__button detail__button-buy">MUA NGAY</button>
+                <button  class= "detail__button detail__button-show-cart"><i class="fas fa-shopping-cart"></i> XEM GIỎ HÀNG</button>
+            </div>
+        </div>   
+    </div>
+</div>
