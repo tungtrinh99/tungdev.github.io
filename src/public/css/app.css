@@ -315,11 +315,13 @@
     padding : 0 8px;
 }
 .show-details{
-    width: 100%;
+    width: 50%;
     height: 30px;
     display: flex;
+    margin:auto;
+    border-radius : 3px;
     align-items: center;
-    margin-top: 8px;
+    margin-top: 16px;
     outline: none;
     border: none;
     background: white;
