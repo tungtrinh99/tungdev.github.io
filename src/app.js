@@ -4,7 +4,7 @@ var path = require('path')
 var routers = require('./routers/index')
 
 var app =  express()
-var port = process.env.PORT || 3000
+var port = process.env.PORT || 8000
 var db = require('./config/db/index')
 var numeral = require('numeral')
 
