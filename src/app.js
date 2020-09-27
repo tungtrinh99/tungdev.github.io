@@ -17,7 +17,9 @@ app.engine('hbs', exphbs({
 }));
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resources','views'));
-
+app.get('/',function(req,res,next){
+    res.send('hello')
+})
 routers(app) 
 
 app.listen(port, () => {
