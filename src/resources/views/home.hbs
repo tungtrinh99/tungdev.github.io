@@ -11,7 +11,7 @@
     <div class="container mt-4 ">
         <div class="row">
             {{#each docs}}
-                <div class="col-xl-3 mt-4">
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mt-4">
                     <div class="home-product">
                         <div class="home-product-header">
                             <a href="/products/{{this.slug}}" class="home__product-image-link">
@@ -21,12 +21,7 @@
                                 
                         </div>
                         <div class="home-product-content">
-                            {{!-- <ul class="product-color-list">
-                                <li class="product-color-item"></li>
-                                <li class="product-color-item"></li>
-                                <li class="product-color-item"></li>
-                                <li class="product-color-item"></li>
-                            </ul> --}}
+                            
                             <a href="/products/{{this.slug}}"class="home-product-name">{{this.name}}</a>
                             <div class="home-product-price">
                                 <span class="home-product-price--current">{{this.pricecurrent}} ₫ </span>
@@ -39,8 +34,6 @@
                         </div>
                     </div>
                 </div>
-            {{/each}}
-            
-            
+            {{/each}}          
         </div>
     </div>

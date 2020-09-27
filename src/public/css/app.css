@@ -237,6 +237,9 @@
     width: 100%;
     /* background-color: #ededed; */
 }
+.mainbanner {
+    
+}
 .home-product{
     background-color: rgb(0 0 0 / 20%);
     border-radius: 15px;
@@ -272,18 +275,7 @@
     transition: 0.4s;
     /* padding : 8px 0; */
 }
-.product-color-list{
-    display: flex;
-    justify-content: center ;
-}
-.product-color-item{
-    width: 24px;
-    height: 24px;
-    border-radius:100%;
-    background-color: red;
-    margin : 16px 8px;
-    border : 1px solid #9E9E9E;
-}
+
 .home-product-name{
     font-size:1.3rem;
     text-align: center;
