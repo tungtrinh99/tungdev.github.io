@@ -5,7 +5,7 @@ function router(app) {
     
     
     
-    app.use('/',siteRouter)
+    app.get('/',siteRouter)
     app.use('/products',detailsRouter)
     app.use('/admin',adminRouter)
 }
