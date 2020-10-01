@@ -9,7 +9,7 @@ async function connect(){
             useFindAndModify: false,
             useCreateIndex: true
         });
-        console.log('connect sucessfully');
+        console.log('connect sucessfully database');
        
    } catch (error) {
     console.log('connect failed');

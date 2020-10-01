@@ -8,10 +8,10 @@
         </a>
     </section>
    
-    <div class="container mt-4 ">
+    <div class="container ">
         <div class="row">
             {{#each docs}}
-                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mt-4">
+                <div class="col col-lg-3 col-md-4 col-sm-6 mt-24">
                     <div class="home-product">
                         <div class="home-product-header">
                             <a href="/products/{{this.slug}}" class="home__product-image-link">
@@ -28,8 +28,9 @@
                                 <span class="home-product-price--old">{{this.priceold}} ₫</span>
                             </div>
                            
-                            <div class="show-details">
-                                <a href="/products/{{this.slug}}">Xem Chi Tiết</a>
+                            <div class="button__product-action">
+                                <a class="btn__product button__product-action--show-details" href="/products/{{this.slug}}">Xem Chi Tiết</a>
+                                <a class="btn__product button__product-action--add-cart" href="#">Thêm vào giỏ</a>
                             </div>
                         </div>
                     </div>

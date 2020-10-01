@@ -13,5 +13,6 @@ const Shoe = new Schema({
   },{
     timestamps: true,
   });
+  
 
   module.exports = mongoose.model('Shoes',Shoe);
