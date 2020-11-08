@@ -20,7 +20,7 @@
 
   .site-card-mobile {
     transition: 0.4s;
-    
+
     position: fixed;
     background-color: white;
     top: 0;
@@ -141,14 +141,14 @@
     <div class="header__topbar-list-left">
       <ul class="header__topbar-list">
 
-        <li class="header__topbar-item">
+        <li class="header__topbar-item ">
           <a href="https://www.facebook.com/tungtrinh99" class="header__topbar-item-link">
             <i class="fab fa-facebook header__topbar-item-icon"></i>
             <span class="header__topbar-item-nameicon">Facebook</span>
           </a>
 
         </li>
-        <li class="header__topbar-item">
+        <li class="header__topbar-item ">
           <a href="https://www.instagram.com/tungtrinh.js/" class="header__topbar-item-link">
 
             <i class="fab fa-instagram header__topbar-item-icon"></i>
@@ -167,7 +167,7 @@
     <div class="header__topbar-list-right">
       <ul class="header__topbar-list">
 
-        <li class="header__topbar-item">
+        <li class="header__topbar-item login">
           <a href="#" class="header__topbar-item-link">
 
             <i class="fas fa-user header__topbar-item-icon"></i>
@@ -175,7 +175,7 @@
 
           </a>
         </li>
-        <li class="header__topbar-item">
+        <li class="header__topbar-item cart">
           <a href="#" class="header__topbar-item-link">
 
             <i class="fas fa-shopping-cart header__topbar-item-icon"></i>
@@ -509,10 +509,18 @@
 </div>
 <script>
   const cartMobile = document.querySelector('.cart-mobile > i');
+  const siteCardMobile = document.querySelector('.site-card-mobile ');
+  const modal = document.querySelector('.modal');
   cartMobile.addEventListener('click', () => {
-    const siteCardMobile = document.querySelector('.site-card-mobile ');
-    const modal = document.querySelector('.modal');
+
     siteCardMobile.classList.toggle('hide');
     modal.classList.toggle('show')
   })
+  const cart = document.querySelector('.cart')
+  console.log(cart)
+  cart.addEventListener('click', () => {
+    siteCardMobile.classList.toggle('hide');
+    modal.classList.toggle('show')
+  })
+
 </script>

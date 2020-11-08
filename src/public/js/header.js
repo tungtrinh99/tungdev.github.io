@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const overLay = document.querySelector('.modal');
     const closeNavMobile = document.querySelector('.close');
     const buttonBarMobile = document.querySelector('.header-bar-mobile-icon');
-    const buttonSearchMobile = document.querySelector('.header-search-mobile-icon');
+    // const buttonSearchMobile = document.querySelector('.header-search-mobile-icon');
     const inputSearchMobile = document.querySelector('.header__search-mobile');
     var tt = 1;
 
@@ -59,9 +59,9 @@ document.addEventListener("DOMContentLoaded", function () {
     //     navTablet.classList.toggle('move-left');
     //     overLay.classList.toggle('show');
     // })
-    buttonSearchMobile.addEventListener('click', () => {
-        inputSearchMobile.classList.toggle('hide');
+    // buttonSearchMobile.addEventListener('click', () => {
+    //     inputSearchMobile.classList.toggle('hide');
 
-    })
+    // })
 
 })

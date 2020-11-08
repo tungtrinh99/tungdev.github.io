@@ -1,15 +1,15 @@
 const myModel = require('../models/shoes')
 const numeral = require('numeral')
 const {multipleMongooseToObject} = require('../../util/mongoose')
+const { json } = require('body-parser');
+const mySqlConnect = require('../models/db');
+
 class SiteController {
     index(req,res,next) {
-        myModel.find({})
-            .then(docs=> {                                   
-                res.render('home',{
-                    docs : multipleMongooseToObject(docs)
-                })              
-            })
-            .catch(next)
+        mySqlConnect.query('SELECT * FROM sanpham',(err,result,fields)=>{
+            if(!err) res.render('home',{docs : result})
+            else console.log(err);
+        })
     }
 
 }

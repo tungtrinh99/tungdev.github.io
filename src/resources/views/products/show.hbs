@@ -1,38 +1,38 @@
 <div class="container margin-top">
+    
     <div class="row">
-        <div class="col col-lg-8 col-md-8">
+        <div class="col col-lg-6 col-md-6">
             <div class="row">
              
                 <div class="col col-lg-12">
                     <div class="detail-main-image-wrap">
-                        <img src="/img/{{docs.image}}" alt="" class="detail-main-image">
+                        <img src="/img/{{docs.HinhAnh}}" alt="" class="detail-main-image">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col col-lg-4 col-md-4">
+        <div class="col col-lg-6 col-md-6">
             <div class="product-title">
-                <h2>{{docs.name}}</h2>
+                <h2>{{docs.TenSP}}</h2>
                 <span class="code-product">
-                    Mã : <span>{{docs._id}}</span>
+                    Mã : <span>{{docs.MaSP}}</span>
                 </span>
                 <span class="status-product">
                     Trạng thái : <b>Còn hàng</b>
                 </span>
-                <span class="rate-product">
+                {{!-- <span class="rate-product">
                     Xếp hạng : 
                     <span><i class="fas fa-star"></i></span>
                     <span><i class="fas fa-star"></i></span>
                     <span><i class="fas fa-star"></i></span>
                     <span><i class="fas fa-star"></i></span>
                     <span><i class="fas fa-star"></i></span>
-                </span>
+                </span> --}}
             </div>
             <div class="product-price">
-                <span class="detail-price-current">{{docs.pricecurrent}} ₫</span>
-                <del>{{docs.priceold}} ₫</del>
-                </br>
-                </br>
+                <span class="detail-price-current">{{docs.GiaBan}} ₫</span>
+                <del>{{docs.GiaBan}} ₫</del>
+                
                 <span class="product-sale">Giảm 19%</span>
                 <span class="product-vat">(Đã bao gồm VAT)</span>
             </div>
