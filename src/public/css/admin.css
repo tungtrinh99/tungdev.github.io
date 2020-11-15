@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -24,9 +25,12 @@ body {
   font-family: "Muli", sans-serif;
   background-color: #E2DFF2;
 }
-
+.right-button-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
 .btn {
-  width: 100%;
+  width: 45%;
   height: 40px;
   background-color: #10182F;
   border-radius: 5px;
@@ -36,7 +40,12 @@ body {
   transition: all 0.2s ease;
   cursor: pointer;
 }
-
+.btn-cancer{
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .btn:hover {
   box-shadow: 0px 0px 0px rgba(33, 33, 107, 0.35);
 }
@@ -760,7 +769,7 @@ body {
 }
 
 .right__content {
-  padding: 60px 5%;
+  padding: 30px 5%;
 }
 
 @media screen and (max-width: 799px) {
@@ -898,21 +907,28 @@ body {
   .right table thead {
     display: none;
   }
-  .right table tbody, .right table tr, .right table td {
+
+  .right table tbody,
+  .right table tr,
+  .right table td {
     display: block;
     width: 100%;
   }
+
   .right table tr {
     margin-bottom: 15px;
   }
+
   .right table tr:last-child {
     margin-bottom: 0px;
   }
+
   .right table td {
     text-align: right !important;
     position: relative;
     padding-left: 80px !important;
   }
+
   .right table td:before {
     content: attr(data-label);
     position: absolute;
@@ -931,7 +947,8 @@ body {
   }
 }
 
-.right table td, .right table th {
+.right table td,
+.right table th {
   border: 1px solid #b2b9ce;
   text-align: left;
   padding: 8px;
@@ -939,10 +956,14 @@ body {
 }
 
 @media screen and (max-width: 1023px) {
-  .right table td, .right table th {
+
+  .right table td,
+  .right table th {
     border-bottom: 0px;
   }
-  .right table td:last-child, .right table th:last-child {
+
+  .right table td:last-child,
+  .right table th:last-child {
     border-bottom: 1px solid #a2aac2;
   }
 }
@@ -1179,4 +1200,33 @@ body {
 .right__slideIcon img {
   width: 100%;
 }
+
+.total-product {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 5% 30px;
+}
+.right__tableWrapper{
+  height: 454px;
+  overflow: auto;
+}
 /*# sourceMappingURL=main.css.map */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

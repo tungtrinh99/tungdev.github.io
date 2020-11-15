@@ -6,11 +6,18 @@ const mySqlConnect = require('../models/db');
 
 class SiteController {
     index(req,res,next) {
-        mySqlConnect.query('SELECT * FROM sanpham',(err,result,fields)=>{
-            if(!err) res.render('home',{docs : result})
+        var query = 'SELECT * FROM sanpham';
+        var column = res.locals._sort.column;
+        var type = res.locals._sort.type;
+        if(req.query.hasOwnProperty('_sort')){
+           query = `${query} ORDER BY ${column} ${type}`;
+        }
+        mySqlConnect.query(query,(err,result,fields)=>{
+            if(!err) res.render('home',{docs : result},)
             else console.log(err);
         })
     }
+
 
 }
 module.exports = new SiteController
