@@ -12,7 +12,11 @@ class AdminController {
     
     viewProduct(req, res, next) {
         mySqlConnect.query('SELECT * FROM sanpham', (err, result, fields) => {
- 
+            result.forEach(item => {
+                Object.assign(item, {
+                    GiaBan:Intl.NumberFormat().format(item.GiaBan)
+                })
+            });
             if (!err) res.render('admin/view_product', {
                 totalProduct: totalProduct,
                 docs: result,

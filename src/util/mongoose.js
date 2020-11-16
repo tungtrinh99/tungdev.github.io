@@ -6,4 +6,5 @@ module.exports = {
     dataToObject : function (data) {
         return data ? data[0] : data;
     }
+    
 }
